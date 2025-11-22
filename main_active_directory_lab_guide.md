@@ -191,9 +191,5 @@ Drag GPO onto target OU.
 ### 5. Force Update on Client
 ```cmd
 gpupdate /force
-```
 
----
-
-Let me know what you want to add first, and I’ll fill in the section.
 
