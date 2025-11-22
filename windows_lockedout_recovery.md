@@ -3,21 +3,21 @@
 [![Windows](https://img.shields.io/badge/OS-Windows-blue)](https://www.microsoft.com)
 [![Warning](https://img.shields.io/badge/⚠️-Caution-red)](https://example.com)
 
-> **Warning:** This method involves replacing system files. Only use on a computer you own. Always back up important data if possible.
+> **Warning:** This method involves replacing system files. Use only on a Personal PC. Remember, back up important data if possible.
 
 ---
 
 ## Goal
-Regain access to Windows if you are locked out due to a forgotten password using the `utilman.exe` workaround.
+Regain access to Windows / Windows AD if you are locked out due to a forgotten password using the `utilman.exe` workaround.
 
 ---
 
 ## Steps
 
 <details>
-<summary>1. Boot Into Recovery</summary>
+<summary>1. Boot Into Recovery Mode</summary>
 
-1. Insert a Windows installation USB or DVD.
+1. Insert a Windows installation USB or DVD. (https://www.microsoft.com/en-us/software-download/windows11)
 2. Boot from the USB/DVD.
 3. Select **Repair your computer → Troubleshoot → Advanced options → Command Prompt**.
 
@@ -44,12 +44,12 @@ exit
 1. Run:
 
 ```cmd
-copy C:\Windows\System32\utilman.exe C:\Windows\System32\utilman.exe.bak
+C:\Windows\System32\utilman.exe C:\Windows\System32\utilman.exe.bak
 ```
 
-*(Replace `C:` with your Windows drive if different.)*
+*(Replace `C:` with your personal Windows drive if different.)*
 
-2. Confirm overwrite if prompted (type `Yes`).
+2. Confirm overwrite if prompted, then (type `Yes`).
 
 </details>
 
@@ -59,7 +59,7 @@ copy C:\Windows\System32\utilman.exe C:\Windows\System32\utilman.exe.bak
 1. Run:
 
 ```cmd
-copy C:\Windows\System32\cmd.exe C:\Windows\System32\utilman.exe
+C:\Windows\System32\cmd.exe C:\Windows\System32\utilman.exe
 ```
 
 2. Confirm overwrite if prompted.
@@ -67,10 +67,10 @@ copy C:\Windows\System32\cmd.exe C:\Windows\System32\utilman.exe
 </details>
 
 <details>
-<summary>5. Reboot and Use the Fix</summary>
+<summary>5. Reboot and use the Fix</summary>
 
-1. Restart your computer normally.
-2. On the login screen, click the **Ease of Access** button (bottom-right corner). This will open a Command Prompt with administrative privileges.
+1. Restart your computer as you normally would.
+2. On the login screen, click the **Ease of Access** button at the bottom-right corner. This will open a Command Prompt with administrative privileges, instead of the previous controls.
 
 </details>
 
@@ -105,11 +105,11 @@ copy C:\Windows\System32\utilman.exe.bak C:\Windows\System32\utilman.exe
 
 ---
 
-## Forced Restore (If Errors Occur)
+## Forced Restore (If Errors Occur) Fix
 
-❗ **If it STILL errors:**
+**If an error❗occurs:** 
 
-Run the forced restore:
+Run a forced restore:
 
 ### Step 1: Take ownership
 ```cmd
@@ -126,19 +126,22 @@ icacls C:\Windows\System32\utilman.exe /grant administrators:F
 copy C:\Windows\System32\utilman.exe.bak C:\Windows\System32\utilman.exe
 ```
 
+### Step 4: Reset PC & Check Ease of Access Controls
 ---
 
+### Step 5: DONE!
+
 ## How It Works
-The Windows login screen allows certain accessibility tools—like Utility Manager (`utilman.exe`)—to run *before* a user signs in. By temporarily replacing `utilman.exe` with `cmd.exe`, Windows unknowingly grants you a Command Prompt with system-level privileges at the login screen. This lets you reset passwords or enable accounts without normal login authentication.
+The Windows login screen allows certain accessibility tools—like Utility Manager (`utilman.exe`)—to run *before* a user signs in fully. By temporarily replacing `utilman.exe` with `cmd.exe`, Windows unknowingly grants you a Command Prompt with system-level privileges at the login screen. Letting you bypass knowing your password, in order to let you reset passwords or enable accounts without normal login authentication.
 
 ---
 
 ### Notes
 - Only works for local accounts. Microsoft accounts may require additional steps.
-- Do **not** use this method on systems you do not own.
-- Always restore `utilman.exe` to maintain system security.
+- Do **not** use this method on systems you do not own, as it is a breach of privacy.
+- Always restore `utilman.exe` to maintain system security, as others can do the same to your own devices.
 
 ---
 
-*Created by [Your Name] — Use responsibly.*
+*Created by [B. Fontaine] — Use responsibly & at your own risk.*
 
