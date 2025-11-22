@@ -23,9 +23,9 @@ This guide will walk you through setting up a complete, albeit basic, Active Dir
 ---
 
 ## Requirements
-- Virtualization: VirtualBox, VMware, or Hyper-V
-- Windows Server ISO (2019 or 2022)
-- Windows 10/11 ISO
+- Virtualization: VirtualBox, VMware, or Hyper-V https://www.virtualbox.org/wiki/Downloads
+- Windows Server ISO (2019 or 2022) https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019
+- Windows 10/11 ISO https://www.microsoft.com/en-us/software-download/windows11
 - 8–16 GB RAM recommended
 - 50–100 GB free disk space
 
