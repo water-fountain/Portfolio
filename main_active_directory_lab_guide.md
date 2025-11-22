@@ -78,20 +78,22 @@ This guide will walk you through setting up a complete, albeit basic, Active Dir
 
 ---
 
-## Installing AD DS Role
+## Installing AD DS Roles
 
 ### 1. Open Server Manager
-Click Manage → Add Roles and Features.
+Click **Manage** → **Add Roles and Features**.
 
 ### 2. Choose Role-Based Installation
 Click Next until you reach Server Roles.
 
 ### 3. Install Active Directory Domain Services
-Check:
+<details>
+<summary>Check:</summary>
 - Active Directory Domain Services
 - Allow required features
 
 Click Install.
+</details>
 
 ---
 
