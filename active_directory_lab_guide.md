@@ -1,11 +1,13 @@
 # Active Directory Home Lab
 
+[![Windows](https://img.shields.io/badge/OS-Windows-blue)](https://www.microsoft.com)
+[![Warning](https://img.shields.io/badge/⚠️-Caution-red)](https://example.com)
+
 This guide will walk you through setting up a complete, albeit basic, Active Directory (AD) environment for IT help desk practice & project building.
 
 ---
-
+<deatails>
 ## Goals
-<details>
 <summary>Build a functional AD lab on a home machine using:</summary>
 - **Windows Server 2019 (Domain Controller)**
 - **Windows 10/11 Client VM**
