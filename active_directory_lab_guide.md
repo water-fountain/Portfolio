@@ -6,12 +6,14 @@
 ![Active Directory](https://img.shields.io/badge/Role-Active%20Directory-3A5BA0)
 ![Caution](https://img.shields.io/badge/⚠️-Administrative%20Changes-critical)
 
-This guide will walk you through setting up a complete, albeit basic, Active Directory (AD) environment for IT help desk practice & project building.
+This guide will walk you through setting up a complete, albeit basic, Active Directory (AD) environment for IT practice project building.
 
 ---
+
 <details>
 ## Goals
 <summary>Build a functional AD lab on a home machine using:</summary>
+
 - **Windows Server 2019 (Domain Controller)**
 - **Windows 10/11 Client VM**
 - **pfSense or NAT networking (optional)**
@@ -20,7 +22,7 @@ This guide will walk you through setting up a complete, albeit basic, Active Dir
 
 ---
 
-## 📦 Requirements
+## Requirements
 - Virtualization: VirtualBox, VMware, or Hyper-V
 - Windows Server ISO (2019 or 2022)
 - Windows 10/11 ISO
