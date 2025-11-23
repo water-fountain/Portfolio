@@ -167,7 +167,7 @@ The server will reboot as a Domain Controller.
 
 ### 2. Create Security Groups
 <details>
-<summmary>Recommended Security Groups:</summary> 
+<summary>Recommended Security Groups:</summary> 
 Create desired groups to organize permissions and role-based access in your domain 
 
 - Sales_Users - Standard Users in Sales dapartment 
