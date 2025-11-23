@@ -166,7 +166,9 @@ The server will reboot as a Domain Controller.
 </details>
 
 ### 2. Create Secuirty Groups
+
 <details>
+
 <summmary>Recommended Security Groups:</summary> 
 Create desired groups to organize permissions and role-based access in your domain 
 
