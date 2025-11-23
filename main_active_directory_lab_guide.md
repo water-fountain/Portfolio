@@ -114,10 +114,16 @@ Click Install. (You can mix & match what you would like to add)
 In Server Manager, click the yellow notification flag → Promote this server to a domain controller.
 
 ### 2. Create a New Forest
+<details>
+<summary>When Creating:</summary>
+
 - Choose **Add a new forest**
 - Enter your Domain name. Example: (**lab.local**)
 - NetBIOS name auto-fills (e.g **LAB**)
+
 Click **Next.**
+
+</details>
 
 ### 3. Domain Controller Options
 <details>
