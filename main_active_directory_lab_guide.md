@@ -160,18 +160,25 @@ The server will reboot as a Domain Controller.
 <summary>Steps:</summary>
 
 - Start by clicking the search bar
-- Type Windows Administrative Tools
-- Click Active Directory Users and Computers.
+- Type **Windows Administrative Tools**
+- Click **Active Directory Users and Computers**
 
 </details>
 
 ### 2. Create Organizational Units
 Right‑click domain → New → Organizational Unit.
-Suggested OUs:
+<details>
+<summary>Suggested OUs:</summary>
+
 - Users
 - Admins
 - Computers
 - Groups
+- CorpUsers
+- Workstations
+- Service Accounts
+
+</details>
 
 ### 3. Create User Accounts
 Right‑click Users OU → New → User.
