@@ -119,7 +119,7 @@ In Server Manager, click the yellow notification flag → Promote this server to
 
 - Choose **Add a new forest**
 - Enter your Domain name. Example: (**lab.local**)
-- NetBIOS name auto-fills (e.g **LAB**)
+- NetBIOS name auto-fills the name (e.g **LAB**)
 
 Click **Next.**
 
@@ -129,27 +129,27 @@ Click **Next.**
 <details>
 <summary>Checklist:</summary>
 
-- Leave Forest Functional Level at default
-- Leave Domain Functional Level at default
-- Ensure DNS server is checked
-- Global Catalog should be checked 
-- Leave RODC (Read-Only Domain Controller) unchecked
-- Set a DSRM (Directory Services Restore Mode) password
+- Leave **Forest Functional Level** at **default**
+- Leave **Domain Functional Level** at **default**
+- Ensure **DNS server** is **checked**
+- **Global Catalog** should be **checked**
+- Leave **RODC** (Read-Only Domain Controller) **unchecked**
+- Set a **DSRM** (Directory Services Restore Mode) password
 
 Click **Next.**
 
 </details>
 
 ### 4. DNS & Additional Options
-- A DNS delegation warning may appear - this is normal, you may skip
-- Click next through additional options and paths pages.
+- A DNS delegation **warning** may appear - this is normal, you may **skip**
+- Click **next** through additional options and paths pages
 
 ### 5. Complete Setup
-- Review all settings 
+- Review **all** settings 
 - Let the prerequisite check complete 
-- Click Install.
+- Click **Install**
 
-The server will reboot as a Domain Controller.
+The server will reboot as a **Domain Controller**.
 
 ---
 
@@ -168,32 +168,33 @@ The server will reboot as a Domain Controller.
 ### 2. Create Security Groups
 <details>
 <summary>Recommended Security Groups:</summary> 
-Create desired groups to organize permissions and role-based access in your domain 
 
-- Sales_Users - Standard Users in Sales dapartment 
-- HelpDesk_Techs - Help desk staff with limited admin privileges to resolve issues
-- IT_Admins - Full administrative rights for IT staff
+Create desired groups to organize **permissions and role-based access** in your domain 
+
+- **Sales_Users** - **Standard** Users in Sales dapartment 
+- **HelpDesk_Techs** - Help desk staff with **limited** admin privileges to resolve issues
+- **IT_Admins** - **Full** administrative rights for IT staff
 
 </details>
 
 <details>
 <summary>How to Create a Security Group</summary>
 
-- Open Active Directory Users and Computers 
-- Navigate to the OU where you would like to store your groups (e.g CorpUsers -> IT or another dedicated Group OU)
-- Right click the OU -> New -> Group
+- Open **Active Directory Users and Computers**
+- Navigate to the OU where you would like to store your groups (e.g **CorpUsers** -> **IT** or another dedicated Group OU)
+- Right click the **OU** -> **New** -> **Group**
 - Configure the following:
-   - Group Name: (ex. IT_Admins) 
-   - Group Scope: Global
-   - Group Type: Security
-- Click Ok to create the group.
+   - Group Name: (ex. **IT_Admins**) 
+   - Group Scope: **Global**
+   - Group Type: **Security**
+- Click **Ok** to create the group.
 
 You can now add users to these groups to create accounts, in this instance, for the IT department
 
 </details>
 
 ### 3. Create Organizational Units
-Right‑click domain → New → Organizational Unit.
+**Right‑click** domain → **New**→ **Organizational Unit**.
 <details>
 <summary>Suggested OUs:</summary>
 
@@ -210,20 +211,20 @@ Right‑click domain → New → Organizational Unit.
 <details>
 <summary>How to Create an OU</summary>
 
-- Open Active Directory Users & Computers
-- Right click your domain (ex. lab.local)
-- Select New -> Organizational Unit
-- Enter the OU name (ex. Sales)
-- Click OK
-
-</details>
+- Open **Active Directory Users & Computers**
+- Right click your domain (ex. **lab.local**)
+- Select **New** -> Organizational Unit
+- Enter the OU name (ex. **Sales**)
+- Click **OK**
 
 Repeat for each department you would want to organize
+
+</details>
 
 ### 4. Create User Accounts
 Create users inside the correct department OU for clear and more efficient management
 <details>
-<summary>Steps to Create a User</summary>
+<summary>Creating a User</summary>
 
 - In **Active Directory Users & Computers**, navigate to the your desired OU. (Ex. lab.local -> **Sales**)
 - Right-click the OU -> New -> User
@@ -236,7 +237,23 @@ Create users inside the correct department OU for clear and more efficient manag
 
 </details>
 
-### 5. Add Admin Users
+### 5. Adding Users to Security Groups 
+After creating a user, add them to the appropriate group by:
+<details>
+<summary>Steps:</summary>
+
+- Right-click the user -> Properties
+- Go to the Member of tab
+- Click Add
+- Enter the group name (ex. Sales_Users, HelpDesk_Techs, IT_Admins)
+- Click OK
+
+Users now will inherit permissions based on the groups assigned to them.
+
+</details>
+
+
+### 6. Add Admin Users
 Create an account such as helpdesk.admin.
 Add them to:
 - Domain Admins **or**
