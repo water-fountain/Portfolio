@@ -141,7 +141,7 @@ Click **Next.**
 </details>
 
 ### 4. DNS & Additional Options
-- A DNS delegation warning may appear - this is normal, you maky skip
+- A DNS delegation warning may appear - this is normal, you may skip
 - Click next through additional options and paths pages.
 
 ### 5. Complete Setup
@@ -153,10 +153,17 @@ The server will reboot as a Domain Controller.
 
 ---
 
-## 📘 Creating Users & Organizational Units (OUs)
+## Creating Users & Organizational Units (OUs)
 
 ### 1. Open AD Users and Computers (ADUC)
-Start → Windows Administrative Tools → Active Directory Users and Computers.
+<details>
+<summary>Steps:</summary>
+
+- Start by clicking the search bar
+- Type Windows Administrative Tools
+- Click Active Directory Users and Computers.
+
+</details>
 
 ### 2. Create Organizational Units
 Right‑click domain → New → Organizational Unit.
