@@ -394,8 +394,16 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
 
 ![alt text](image-27.png)
 
-   - **Task Manager Restrictions:** **User Config** -> **Admin Templates** -> **Control Panel** -> **Prohibit access to Control Panel**
+![alt text](image-30.png) 
+
+   - **Control Panel Restrictions:** **User Config** -> **Admin Templates** -> **Control Panel** -> **Prohibit access to Control Panel**
 
 ![alt text](image-29.png)
 
-   - 
+   - **Software Deployment:** **Computer Configuration** -> **Policies** -> **Software Settings** -> **Software Installation**
+
+
+- Close the editor when finished
+- Force the Group Policy update on client side (or wait for an auto refresh)
+   - Command Prompt: **gpupdate /force**
+- Test the GPO by logging into the affected users to verify settings are all correct
