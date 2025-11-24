@@ -384,8 +384,18 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
    - **Password Policy:** **Computer Configuration** -> **Policies** -> **Windows Settings** -> **Security Settings** -> **Account Policies** -> **Password Policy**
       - Policies enabled in this instance: **Password must meet complexity requirements** & **Minimum password length**
 
+![alt text](image-28.png)
+
 ![alt text](image-26.png)
 
-   - **Mapped Drives:** **User configuration** -> **Preferences** -> **Windows Settings** -> **Drive Maps**  
 
+   - **Desktop Restrictions:** **User Configuration** -> **Policies** -> **Adminstrative Templates** -> **Desktop**
+      - Policies enabled in this instance: **Hide & Disable all items on the desktop, Remove My Documents icon on Desktop, Hide Network Locations, Remove Properties from the Computer Icon, & Remove recycle bin icon from desktop**
 
+![alt text](image-27.png)
+
+   - **Task Manager Restrictions:** **User Config** -> **Admin Templates** -> **Control Panel** -> Prohibit access to Control Panel
+
+![alt text](image-29.png)
+
+   - 
