@@ -400,7 +400,41 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
 
 ![alt text](image-29.png)
 
-   - **Software Deployment:** **Computer Configuration** -> **Policies** -> **Software Settings** -> **Software Installation**
+   - **Drive Mapping:**
+      
+   - Create Department folders
+      - Inside C:\DeptShares, create:
+         - Sales
+         - HR
+         - IT
+         - HelpDesk
+
+![alt text](image-31.png)
+
+   - Set NTFS Permissions
+      - Ex. for Sales:
+         - Right click Sales -> Properties -> Security -> Advanced
+         - Remove everyone if present
+         - Add:
+            - Domain Admins -> Full Control
+            - SalesUsers -> Modify
+         - WARNING: 
+            - Don't use individual user accounts
+            - Don't give full control to non-admins
+   - Share the folder
+      - Right click sales -> Properties -> Sharing -> Advanced Sharing
+         - Check Share this folder
+         - Share name: Sales
+         - Permissions -> Remove everyone 
+         - Add:
+            - SalesUsers -> Read/Write
+            - Domain Admins -> Full Control
+
+
+
+
+
+
 
 
 - Close the editor when finished
