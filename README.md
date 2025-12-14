@@ -1,24 +1,27 @@
-Windows Server 2019 Active Directory Lab
+IT Portfolio – Brandon Fontaine
 
-This project was built to simulate a real-world IT environment using VirtualBox, Windows Server 2019, and Windows 10. The goal of this lab is to demonstrate practical skills in:
+This repository contains hands-on IT Support and Systems Administration projects designed to simulate real-world enterprise environments. Each project is fully documented with step-by-step configuration, screenshots, and troubleshooting notes to demonstrate job-ready technical skills.
 
-Active Directory Domain Services (AD DS)
+Projects Overview
 
-DNS & DHCP management
+Active Directory Domain Infrastructure Lab
 
-Group Policy Object (GPO) configuration
+📁 AD-Project/
 
-Role-Based Access Control (RBAC)
+Simulates a Windows enterprise domain environment using Windows Server 2019 and Windows 10, focusing on identity management, network services, and access control.
 
-Secure file sharing
+Key skills demonstrated:
 
-Drive mapping with Item-Level Targeting
+- Active Directory Domain Services (AD DS)
 
-Workstation hardening and enterprise policy enforcement
+- DNS & DHCP configuration
 
-Troubleshooting and system administration workflows
+- Group Policy Objects (GPOs)
 
-To view the full step-by-step build, configuration details, screenshots, and troubleshooting notes, open:
+- Role-Based Access Control (RBAC)
 
-https://github.com/water-fountain/IT-Portfolio/blob/main/AD-Project/main_active_directory_lab_guide.md
+- NTFS permissions & secure file sharing
 
+- Domain join, authentication, and troubleshooting
+
+👉 View full documentation inside the project folder.
