@@ -6,7 +6,7 @@ Projects Overview
 
 Active Directory Domain Infrastructure Lab
 
-📁 AD-Project/
+📁 [Active Directory Project](https://github.com/water-fountain/IT-Portfolio/blob/main/AD-Project/main_active_directory_lab_guide.md)
 
 Simulates a Windows enterprise domain environment using Windows Server 2019 and Windows 10, focusing on identity management, network services, and access control.
 
@@ -25,3 +25,17 @@ Key skills demonstrated:
 - Domain join, authentication, and troubleshooting
 
 👉 View full documentation inside the project folder.
+
+osTicket Help Desk Lab (Planned / In Progress)
+
+📁
+
+About Me
+
+Aspiring IT Support/Help Desk Technician with hands-on experience in device imaging, QA, and enterprise IT deployments. CompTIA Network+ certified, with a strong focus on troubleshooting, documentation, and continuous learning.
+
+🔗 Contact & Links
+
+GitHub: https://github.com/water-fountain
+
+LinkedIn: https://www.linkedin.com/in/bfountains/
