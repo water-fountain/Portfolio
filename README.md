@@ -48,7 +48,6 @@ Key Skills demonstrated:
 
 </details>
 
-
 About Me
 
 Aspiring IT Support/Help Desk Technician with hands-on experience in device imaging, QA, and enterprise IT deployments. CompTIA Network+ certified, with a strong focus on troubleshooting, documentation, and continuous learning.
