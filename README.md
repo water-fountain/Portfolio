@@ -26,7 +26,7 @@ Key skills demonstrated:
 
 </details>
 
-📁 [Help Desk Ticket Scenarios (Planned / In Progress)]()
+📁 [Help Desk Ticket Scenarios (In Progress)](https://github.com/water-fountain/IT-Portfolio/tree/main/Help-Desk-Ticket-Scenarios)
 
 <details>
 <summary>More Information:</summary>
