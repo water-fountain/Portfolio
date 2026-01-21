@@ -34,6 +34,10 @@ Help Desk Ticket Scenarios (Planned / In Progress)
 
 📁
 
+Windows Lockout Recovery Guide 
+
+📁 [Windows-Lockout-Recovery-Guide]()
+
 About Me
 
 Aspiring IT Support/Help Desk Technician with hands-on experience in device imaging, QA, and enterprise IT deployments. CompTIA Network+ certified, with a strong focus on troubleshooting, documentation, and continuous learning.
