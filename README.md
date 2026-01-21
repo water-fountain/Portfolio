@@ -36,7 +36,7 @@ Help Desk Ticket Scenarios (Planned / In Progress)
 
 Windows Lockout Recovery Guide 
 
-📁 [Windows-Lockout-Recovery-Guide](https://github.com/water-fountain/IT-Portfolio/tree/main/Windows-Lockout-Recovery-Guide)
+📁 [Windows-Lockout-Recovery-Guide](https://github.com/water-fountain/IT-Portfolio/blob/main/Windows-Lockout-Recovery-Guide/windows_lockedout_recovery_guide.md)
 
 About Me
 
