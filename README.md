@@ -30,6 +30,10 @@ osTicket Help Desk Lab (Planned / In Progress)
 
 📁
 
+Help Desk Ticket Scenarios (Planned / In Progress)
+
+📁
+
 About Me
 
 Aspiring IT Support/Help Desk Technician with hands-on experience in device imaging, QA, and enterprise IT deployments. CompTIA Network+ certified, with a strong focus on troubleshooting, documentation, and continuous learning.
