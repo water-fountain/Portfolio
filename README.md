@@ -6,6 +6,8 @@ Projects Overview
 
 📁 [Active Directory Project](https://github.com/water-fountain/IT-Portfolio/blob/main/AD-Project/main_active_directory_lab_guide.md)
 
+<details>
+<summary>Information</summary>
 Simulates a Windows enterprise domain environment using Windows Server 2019 and Windows 10, focusing on identity management, network services, and access control.
 
 Key skills demonstrated:
@@ -15,8 +17,7 @@ Key skills demonstrated:
 - Role-Based Access Control (RBAC)
 - NTFS permissions & secure file sharing
 - Domain join, authentication, and troubleshooting
-
-👉 View full documentation inside the project folder.
+</details>
 
 📁 [osTicket Help Desk Lab (Planned / In Progress)]()
 
