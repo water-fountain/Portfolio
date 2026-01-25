@@ -1,5 +1,11 @@
 Purpose: Demonstrates real-world Active Directory account lockout troubleshooting and resolution in an enterprise Windows environment.
 
+![Windows](https://img.shields.io/badge/OS-Windows-blue)
+![Lab](https://img.shields.io/badge/Project-Home%20Lab-purple)
+![Ticketing](https://img.shields.io/badge/Ticketing-informational)
+![Troubleshooting](https://img.shields.io/badge/Troubleshooting-success)
+![Caution](https://img.shields.io/badge/⚠️-Administrative%20Changes-critical)
+
 # Ticket ID: INC-2026-001 (Account Lockout)
 
 ## Issue:

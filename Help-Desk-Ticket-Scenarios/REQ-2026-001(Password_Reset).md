@@ -1,5 +1,11 @@
 Purpose: Demonstrates secure management of user credentials, including multi-factor identity verification, enforcement of corporate password complexity policies, and proactive account security measures.
 
+![Windows](https://img.shields.io/badge/OS-Windows-blue)
+![Lab](https://img.shields.io/badge/Project-Home%20Lab-purple)
+![Ticketing](https://img.shields.io/badge/Ticketing-informational)
+![Troubleshooting](https://img.shields.io/badge/Troubleshooting-success)
+![Caution](https://img.shields.io/badge/⚠️-Administrative%20Changes-critical)
+
 # Ticket ID: REQ-2026-001 (Password_Reset)
 
 ## Issue 
