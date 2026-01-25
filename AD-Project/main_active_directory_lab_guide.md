@@ -299,17 +299,17 @@ Create real user accounts inside the corresponding departmental OU.
    - CorpUsers -> Sales (or HR, IT, etc)
 - Right-click the **OU** -> **New** -> **User**
 
-![alt text](image-14.png)
+![alt text](images/New-OU-User.png)
 - Fill in: 
    - First name (ex. **Alexander**)
    - Last name (ex. **Smith**)
    - User logon Name (ex: **salesrep01**)
 
-![alt text](image-15.png)
+![alt text](images/New-Obj-User-Creation.png)
 
 - Set an **initial password** → **optionally** uncheck “User must change password at next logon.”
 
-![alt text](image-16.png)
+![alt text](images/User-Password-Creation.png)
 
 - Click **Next**, then **Finish**
 
@@ -325,7 +325,7 @@ Create real user accounts inside the corresponding departmental OU.
 - Enter the **correct department group** (ex. **SalesUsers, HRUsers, ITUsers**)
 - Click **OK**
 
-![alt text](image-12.png)
+![alt text](images/User-Member-of-Properties.png)
 
 Now the user will inherit:
    - NTFS folder permissions
@@ -343,22 +343,22 @@ Never use built-in Administrator account for daily work.
 
 - Open **Active Directory Users and Computers** (ADUC) 
 
-![alt text](image-7.png)
+![alt text](images/Opening-ADUC.png)
 
 - Navigate to the **Admins** -> **AdminUsers OU** (create if not done so already)
 
-![alt text](image-6.png)
+![alt text](images/Admin-Dropdown.png)
 
 - Right-click the **OU** -> **New** -> **User**
 
-![alt text](image-8.png)
+![alt text](images/New-OU-User2.png)
 
 - Fill in the account information:
    - First Name: (ex. Janet)
    - Last Name: (ex. Finnel)
    - User Logon Name: (ex. jdoe.admin)
 
-![alt text](image-9.png)
+![alt text](images/New-Obj-User-Creation2.png)
 
 - Click **Next**
 - Set a **strong password**:
@@ -368,7 +368,7 @@ Never use built-in Administrator account for daily work.
 - Add the new account to the **IT_Admins security group**:
    - **Right-click** the user -> **Properties** -> **Member of** tab -> **Add** -> Enter **IT_Admins** -> **Check Names** -> **Ok**
 
-![alt text](image-11.png)
+![alt text](images/Adding-User-SG.png)
 
 </details>
 
@@ -384,11 +384,11 @@ Provides shared access of files for departments with proper permissions.
    - **HelpDesk**
    - **IT**
 
-![alt text](image-3.png)
+![alt text](images/Creation-Dpt-Folders.png)
 
 - Right-click each folder -> Click **properties** -> **Sharing tab** -> **Advanced Sharing**
 
-![alt text](image-2.png)
+![alt text](images/Adv-Sharing-Location.png)
 
 - Now check **share this folder**, set a **share name**, then click **permissions**.
 - Add the corresponding **security group** for each folder & assign **permissions**:
@@ -396,12 +396,12 @@ Provides shared access of files for departments with proper permissions.
    - HelpDesk -> **HelpDesk** -> **Modify**
    - IT_Admins -> **IT_Admins** -> **Full Control**
 
-![alt text](image-4.png)
+![alt text](images/Perm-Modifications-Folders.png)
 
 - Click **apply**, then **ok**
 - Switch to **security tab** to make sure that the **NTFS permissions** match the **share permissions**
 
-![alt text](image-5.png)
+![alt text](images/Sec-Perms-Properties.png)
 
 - Test access by using another **VM** as a user from each **group**
 
@@ -416,19 +416,19 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
 - Open **Group Policy Management Console** (GPMC):
    - **Start** -> **Administrative Tools** -> **Group Policy Management**
 
-![alt text](image-22.png)
+![alt text](images/GPM-Dropdown.png)
 
 - Right click your domain (**lab.local**) -> **Create a GPO in this domain, & link it here..**
 
-![alt text](image-23.png)
+![alt text](images/GPO-Domain-Creation.png)
 
 - Give your new **GPO** a **descriptive name** (ex. **Password Policy GPO**)
 
-![alt text](image-24.png)
+![alt text](images/GPO-Name-Creation.png)
 
 - Right-click the **GPO** -> edit to open the **Group Policy Management Editor**
 
-![alt text](image-25.png)
+![alt text](images/GPME.png)
 
 - Configure policies based on a specific purpose, below are some examples:
 
@@ -437,24 +437,24 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
    - **Password Policy:** **Computer Configuration** -> **Policies** -> **Windows Settings** -> **Security Settings** -> **Account Policies** -> **Password Policy**
       - Policies enabled in this instance: **Password must meet complexity requirements** & **Minimum password length**
 
-![alt text](image-28.png)
+![alt text](images/PP-Settings.png)
 
-![alt text](image-26.png)
+![alt text](images/ALP-Settings.png)
 
 ---
 
    - **Desktop Restrictions:** **User Configuration** -> **Policies** -> **Adminstrative Templates** -> **Desktop**
       - Policies enabled in this instance: **Hide & Disable all items on the desktop, Remove My Documents icon on Desktop, Hide Network Locations, Remove Properties from the Computer Icon, & Remove recycle bin icon from desktop**
 
-![alt text](image-27.png)
+![alt text](images/Desktop-Settings.png)
 
-![alt text](image-30.png) 
+![alt text](images/Desktop-Settings2.png)
 
 ---
 
    - **Control Panel Restrictions:** **User Config** -> **Admin Templates** -> **Control Panel** -> **Prohibit access to Control Panel**
 
-![alt text](image-29.png)
+![alt text](images/CP-Settings.png)
 
 ---
 
@@ -467,7 +467,7 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
          - **IT**
          - **HelpDesk**
 
-![alt text](image-31.png)
+![alt text](images/HR-Folder-Dropdown.png)
 
 ---
 
@@ -477,7 +477,7 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
          - Right click **Sales** -> **Properties** -> **Security** -> **Advanced**
          - Click **Disable Inheritance** -> Convert **inherited permissions**
          
-         ![alt text](image-32.png)
+         ![alt text](images/Sales-NTFS-Perms.png)
 
          - Remove all unnecessary principals to your liking 
          - Add the following:
@@ -491,14 +491,14 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
          - Check **Share this folder**
          - Share name: **Sales**
 
-         ![alt text](image-33.png)
+         ![alt text](images/Share-Folder-Dropdown.png)
 
          - Click **Permissions** -> Remove everyone 
          - Add:
             - SalesUsers -> **Read/Write**
             - Domain Admins -> **Full Control**
 
-         ![alt text](image-34.png)
+         ![alt text](images/SalesUsers-Perms.png)
          
          - Close editor when finished
 
@@ -513,7 +513,7 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
       - Under settings, check:
          - **Enable access-based enumeration**
 
-         ![alt text](image-35.png)
+         ![alt text](images/Enable_ABE.png)
 
       Now HR users cannot even see the Sales folder, & vice versa
 
@@ -537,7 +537,7 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
       - Drive Letter: **S:**
       - Reconnect: **Y**
 
-      ![alt text](image-36.png)
+      ![alt text](images/Create-Drive-Mapping.png)
 
    - Common Tab -> Item-Level Targeting
       - Check **Item-level targeting**
@@ -546,7 +546,7 @@ The purpose of GPO's is to enforce **policies** & automate various **configurati
       - Group: **SalesUsers**
       - Match: **User in group**
 
-      ![alt text](image-37.png)
+      ![alt text](images/Targeting-Editor-Dropdown.png)
 
 ---
 
@@ -662,7 +662,7 @@ Below may be some common issues you may encounter in a basic AD Home Lab & how t
 <details>
 <summary>Network Diagram</summary>
 
-![alt text](image-10.png)
+![alt text](images/Network-Diagram.png)
 
 </details>
 
