@@ -27,7 +27,7 @@ Key skills demonstrated:
 
 </details>
 
-📁 [Help Desk Ticket Scenarios (In Progress)](https://github.com/water-fountain/IT-Portfolio/blob/main/Help-Desk-Ticket-Scenarios/README.md)
+📁 [Help Desk Ticket Scenarios](https://github.com/water-fountain/IT-Portfolio/blob/main/Help-Desk-Ticket-Scenarios/README.md)
 
 <details>
 <summary>More Information:</summary>
