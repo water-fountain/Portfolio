@@ -20,13 +20,6 @@ Key skills demonstrated:
 - Domain join, authentication, and troubleshooting
 </details>
 
-📁 [osTicket Help Desk Lab (Planned / In Progress)]()
-
-<details>
-<summary>More Information:</summary>
-
-</details>
-
 📁 [Help Desk Ticket Scenarios](https://github.com/water-fountain/IT-Portfolio/blob/main/Help-Desk-Ticket-Scenarios/README.md)
 
 <details>
@@ -40,6 +33,13 @@ Key Skills demonstrated:
 - Account and access issue resolution
 - Step-by-step diagnostic workflows
 - Technical communication and escalation criteria
+</details>
+
+📁 [osTicket Help Desk Lab (Planned / In Progress)]()
+
+<details>
+<summary>More Information:</summary>
+
 </details>
 
 📁 [Windows-Lockout-Recovery-Guide](https://github.com/water-fountain/IT-Portfolio/blob/main/Windows-Lockout-Recovery-Guide/windows_lockedout_recovery_guide.md)
