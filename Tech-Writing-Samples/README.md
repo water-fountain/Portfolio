@@ -11,7 +11,7 @@ This writing section showcases long-form technology features written for enthusi
 
 ## Featured Projects:
 
-🗄️<ins>[Stop Buying New Gear: Turn Your Dusty Old Laptop into a High-Power Home Server](https://github.com/water-fountain/IT-Portfolio/blob/main/Tech-Writing-Samples/Laptop-Pi-Home-Server-Guide.md)</ins>
+🗄️[Stop Buying New Gear: Turn Your Dusty Old Laptop into a High-Power Home Server](https://github.com/water-fountain/IT-Portfolio/blob/main/Tech-Writing-Samples/Laptop-Pi-Home-Server-Guide.md)
 
 A deep dive into upcycling "obsolete" hardware. This guide explains how to pair an old laptop with a Raspberry Pi to create a high-performance home lab, covering everything from initial SSH setup to long-term security.
 
@@ -19,7 +19,7 @@ A deep dive into upcycling "obsolete" hardware. This guide explains how to pair 
 
 **Target Audience**: DIY hobbyists and Home-Lab beginners.
 
-🗄️<ins>[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)]()</ins>
+🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)]()
 
 IN PROGRESS
 
