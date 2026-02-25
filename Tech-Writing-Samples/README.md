@@ -21,8 +21,6 @@ A deep dive into upcycling "obsolete" hardware. This guide explains how to pair 
 
 🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)]()
 
-IN PROGRESS
-
 An essential guide to the most confusing cable in your home. This article breaks down the technical standards behind USB-C, explaining why two identical-looking cables can perform radically differently, and how to identify the right specifications for charging, data transfer, and video output.
 
 **Key Focus**: Hardware Standards, Power Delivery (PD), Consumer Education

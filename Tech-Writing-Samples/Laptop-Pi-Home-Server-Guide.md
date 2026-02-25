@@ -1,4 +1,13 @@
 # Stop Buying New Gear: Turn Your Dusty Old Laptop into a High-Power Home Server
+![Feature Article](https://img.shields.io/badge/Article-Feature-informational)
+![How-To Guide](https://img.shields.io/badge/Article-How--To-success)
+![Hardware](https://img.shields.io/badge/Focus-Hardware-orange)
+![Networking](https://img.shields.io/badge/Focus-Networking-blue)
+![Home Lab](https://img.shields.io/badge/Focus-Home%20Lab-lightgrey)
+![Technical Writing](https://img.shields.io/badge/Skill-Technical%20Writing-brightgreen)
+![UX Writing](https://img.shields.io/badge/Skill-UX%20Writing-purple)
+![Research-Based](https://img.shields.io/badge/Style-Research%20Driven-blueviolet)
+
 Stop browsing for your next tech upgrade. The best hardware for your home server isn't sitting on a store shelf; it's in your own closet or junk drawer, gathering the same exact dust. 
 
 Most of us have an old laptop lying around. Maybe it's a retired machine from a past job or an old personal favorite you replaced years ago. These machines aren't dead, per se. They're just too slow for what we expect today. In a world of 4k streaming, gaming, and bloated Windows updates, they've lost their edge for everyday use.
