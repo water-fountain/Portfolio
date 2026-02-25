@@ -82,7 +82,6 @@ sudo apt update && sudo apt upgrade
 ### Step 6: Customize & Experiment
 The best part about a home server is that it can be whatever you want it to be. It’s never truly "finished", as you can start with one service, get bored with it, and completely switch directions or stack another one on top of it.
 
-As you tinker, make sure to document what you’re doing. Keeping a simple log of your setup helps you remember what you liked, what you hated, and what your hardware can actually handle. When the day comes that you finally decide to upgrade your gear again, "Future You" will thank you for all the hard work you put in beforehand.
 
 ## The Bottom Line 
 At the end of the day, building a home server like this is about more than just blocking ads or streaming movies without a subscription. It’s about remembering what you already have, taking what was forgotten, and turning it into a personal, powerful tool that you own and customize to your liking.
