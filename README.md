@@ -2,6 +2,42 @@
 
 This repository contains hands-on IT Support and Systems Administration projects designed to simulate real-world enterprise environments. Each project is fully documented with step-by-step configuration, screenshots, and troubleshooting notes to demonstrate job-ready technical skills.
 
+## 📝 Technical Writing & Documentation
+
+🗄️[Stop Buying New Gear: Turn Your Dusty Old Laptop into a High-Power Home Server](https://github.com/water-fountain/IT-Portfolio/blob/main/Tech-Writing-Samples/Laptop-Pi-Home-Server-Guide.md)
+
+<details>
+<summary>More Information:</summary>
+A conversational yet technical guide on how to convert an "obsolete" laptop into a functional home server with the simple addition of a Raspberry Pi.
+
+Key skills demonstrated:
+* **Remote Management**: Configuring Headless OS deployments with pre-authenticated SSH access.
+* **Network Troubleshooting**: Using ICMP (ping) and DHCP client lists to verify node connectivity.
+* **Linux Administration**: Basic CLI interaction, package management (apt update), and service security (UFW).
+
+</details>
+
+🗄️[Forgotten Your Windows Password? Here's How to Break Back In](https://github.com/water-fountain/Portfolio/blob/main/Tech-Writing-Samples/Windows-Recovery-Guide.md)
+
+<details>
+<summary>More Information:</summary>
+A last "ditch" technical guide detailing how to regain system access using the Windows Recovery Environment (WinRE) to bypass the login screen without any data loss.
+
+Key skills demonstrated:
+* **System Recovery & Logic**: Navigating WinRE and using `diskpart` to identify shifted drive letters in a pre-boot environment.
+* **Advanced Command Line**: Executing file system "swaps" and using `net user` commands to override administrative credentials.
+* **Security Posture:** Explicitly documenting the "Restore to Factory" phase to ensure no permanent security backdoors are left on the system.
+* **Instructional Design**: Using a "Safety First" approach with clear warnings and post-recovery "Safety Net" tips for the user.
+
+</details>
+
+🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)]()
+
+<details>
+<summary>More Information:</summary>
+IN PROGRESS
+</details>
+
 ## IT Projects Overview
 
 📁 [Active Directory Project](https://github.com/water-fountain/IT-Portfolio/blob/main/AD-Project/main_active_directory_lab_guide.md)
@@ -33,13 +69,6 @@ Key Skills demonstrated:
 - Account and access issue resolution
 - Step-by-step diagnostic workflows
 - Technical communication and escalation criteria
-</details>
-
-📁 [osTicket Help Desk Lab (Planned / In Progress)]()
-
-<details>
-<summary>More Information:</summary>
-
 </details>
 
 📁 [Windows-Lockout-Recovery-Guide](https://github.com/water-fountain/IT-Portfolio/blob/main/Windows-Lockout-Recovery-Guide/windows_lockedout_recovery_guide.md)

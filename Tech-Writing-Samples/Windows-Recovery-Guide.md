@@ -50,7 +50,7 @@ Now that we know exactly when Windows is "resting", it's time to perform the sww
 ## Step 4: Reboot & Trigger that "Backdoor"
 Now that these two files are swapped, it's time to see what all the hype was about. But first, you need to exit the recovery environment and head back to your standard Windows login screen. 
 
-1. **Restart Your PC**: Close the Command Prompt and restart your computer as you normally would. Be sure to remove your Windows Installation USB, so you don't accidentlly boot back into the installer. 
+1. **Restart Your PC**: Close the Command Prompt and restart your computer as you normally would. Be sure to remove your Windows Installation USB, so you don't accidently boot back into the installer. 
 2. **Access the Utility Manager**: Once you reach the login screen, look for the **Ease of Access** button (the small icon in the bottom-right corner) and click it.
 3. **Open the Command Prompt**: Instead of the usual **accessibility** menu, a Command Prompt window will pop up instead because this utility runs before a user logs in, this Command Prompt has full **administrative** privileges.
 
@@ -68,7 +68,7 @@ For obvious security reasons, you shouldn't leave a "backdoor" Command Prompt si
 
 1. **Open Command Prompt (Admin)**: Once logged into Windows, right click the Start button and select **Terminal (Admin)** or click the **Start** button, type `cmd`, and select **Run as Administrator**. 
 2. **Revert the Previous Changes**: Run the following command to move your backup back into its rightful place: `copy C:\Windows\System32\utilman.exe.bak C:\Windows\System32\utilman.exe`
-3. **Confirmation**: Type `Yes` when asked to overwite the file. 
+3. **Confirmation**: Type `Yes` when asked to overwrite the file. 
 
 Your login screen is now back to normal, and your account is secure with your new password.
 
