@@ -15,7 +15,7 @@ Getting locked out of your computer is a rite of passage for everyone, not just 
 ## What You'll Need
 
 * A Windows Installation USB or DVD [(you can download the tool from Microsoft here)](https://www.microsoft.com/en-us/software-download/windows11).
-* 10–15 Minutes: This is a quick fix, provided you're comfortable typing a few lines of code into the Command Prompt.
+* **10–15 Minutes**: This is a quick fix, provided you're comfortable typing a few lines of code into the Command Prompt.
 
 ## Step 1: Boot Into the Recovery Environment
 To perform this 'brain surgery' on your OS, we need to access the system files while Windows isn't actually running. This requires booting from an external media source so that your hard drive is 'at rest' and the files aren't currently in use by the system.
@@ -41,7 +41,9 @@ Once Command Prompt is opened, we hit a hurdle: since we aren't actually booted 
 ## Step 3: The Utility Manager Swap
 Now that we know exactly when Windows is "resting", it's time to perform the swwap. We'll start by backing up the Utility Manager (`Utilman.exe`) and replacing it with a copy of Command Prompt (`cmd.exe`). This will trick Windows into opening a terminal when you click the **Accessibility Icon** on the login screen.
 
-1. **Navigate to the System Directory**: First, move the focus of the Command Prompt into the folder where Windows keeps its core files.
-2. **Backup the Original File**:
-3. **Perform the Swap**:
-4. **Confirm**:
+1. **Navigate to the System Directory**: You need to point the Command Prompt to the heart of the OS. Type the drive letter followed by a colon (e.g., `C:`), hit enter, and then run:
+`cd windows\system32`
+
+2. **Backup the Original File**: Create a safety net by renaming the original utility so you can restore it later: `copy utilman.exe utilman.exe.bak`
+3. **Perform the Swap**: Finally, replace the Utility Manager with a copy of the Command Prompt: `copy cmd.exe utilman.exe`
+4. **Confirm**: Type `Yes` and hit **Enter** if the system asks you to overwrite the file.
