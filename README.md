@@ -1,8 +1,8 @@
-IT Portfolio – Brandon Fontaine
+# Portfolio – Brandon Fontaine
 
 This repository contains hands-on IT Support and Systems Administration projects designed to simulate real-world enterprise environments. Each project is fully documented with step-by-step configuration, screenshots, and troubleshooting notes to demonstrate job-ready technical skills.
 
-IT Projects Overview
+## IT Projects Overview
 
 📁 [Active Directory Project](https://github.com/water-fountain/IT-Portfolio/blob/main/AD-Project/main_active_directory_lab_guide.md)
 

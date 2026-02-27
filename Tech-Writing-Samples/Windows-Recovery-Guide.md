@@ -1,158 +1,47 @@
-# Windows Locked Out Recovery Guide
+# Forgotten Your Windows Password? Here's How to Break Back In
+![Feature Article](https://img.shields.io/badge/Article-Feature-informational)
+![How-To Guide](https://img.shields.io/badge/Article-How--To-success)
+![Hardware](https://img.shields.io/badge/Focus-Hardware-orange)
+![Networking](https://img.shields.io/badge/Focus-Networking-blue)
+![Home Lab](https://img.shields.io/badge/Focus-Home%20Lab-lightgrey)
+![Technical Writing](https://img.shields.io/badge/Skill-Technical%20Writing-brightgreen)
+![UX Writing](https://img.shields.io/badge/Skill-UX%20Writing-purple)
+![Research-Based](https://img.shields.io/badge/Style-Research%20Driven-blueviolet)
 
-![Windows](https://img.shields.io/badge/OS-Windows-blue)
-![Lab](https://img.shields.io/badge/Project-Home%20Lab-purple)
-![Warning](https://img.shields.io/badge/⚠️-Caution-red)
-![Caution](https://img.shields.io/badge/⚠️-Administrative%20Changes-critical)
+> **Warning**: You should only perform this on a PC that you own, and always ensure your important data is backed up before tinkering with any data.
 
-> **Warning:** This method involves replacing system files. Use only on a Personal PC. Remember, back up important data if possible.
+Getting locked out of your computer is a rite of passage for everyone, not just "tech people." It might be an old laptop you found in the back of a closet or a forgotten admin account for the family PC. Whatever the case may be, hitting that "Incorrect Password" error over and over again feels like a dead end when you’ve exhausted every other avenue. But before you give up and delete all your precious files, there’s a classic workaround you might not have heard of. It’s a bit of a "backdoor" trick, but by utilizing the **Windows Recovery Environment** to swap the **Ease of Access utility** for the **Command Prompt**, you effectively bypass the lock screen—allowing you to reset your credentials and get back to work in minutes without losing any important data.
 
----
+## What You'll Need
 
-## Goal
-Regain access to Windows / Windows AD if you are locked out due to a forgotten password using the `utilman.exe` workaround.
+* A Windows Installation USB or DVD [(you can download the tool from Microsoft here)](https://www.microsoft.com/en-us/software-download/windows11).
+* 10–15 Minutes: This is a quick fix, provided you're comfortable typing a few lines of code into the Command Prompt.
 
----
+## Step 1: Boot Into the Recovery Environment
+To perform this 'brain surgery' on your OS, we need to access the system files while Windows isn't actually running. This requires booting from an external media source so that your hard drive is 'at rest' and the files aren't currently in use by the system.
 
-## Steps
+1. **Plug and Reboot**: Insert your Windows Installation USB or DVD into your device and restart it. 
+2. **Hit the Boot Menu**: As your PC starts up, before the Windows or motherboard logo appears, you'll need to tap your boot menu key repeatedly. These are usually **F12**, **F11**, or **Esc**. From the menu that appears, select your USB drive as the primary boot device.
+3. **The "Secret" Path**: Once the Windows installer screen loads, **do not** click the "**Install Now**" button. Instead, look for the small **Repair your computer** link tucked away in the bottom-left corner.
+4. **Navigate the Menus**: Follow this path to open your recovery toolkit :
 
-<details>
-<summary>1. Boot Into Recovery Mode</summary>
+**Troubleshoot → Advanced options → Command Prompt**.
 
-1. Insert a Windows installation USB or DVD. (https://www.microsoft.com/en-us/software-download/windows11)
-2. Boot from the USB/DVD.
-3. Select **Repair your computer → Troubleshoot → Advanced options → Command Prompt**.
+## Step 2: Locate Your Windows Installation
+Once Command Prompt is opened, we hit a hurdle: since we aren't actually booted into Windows, drive letters often have a chance to shift. For instance, your primary drive might be `C:` during normal use, but in recovery mode, it could be posing as `D:` or `E:`. We need to verify its identity before we start moving system files around.
 
-</details>
+1. **Enter 'Diskpart'**: At the Command prompt, type the following command to open the Windows partition manager: `diskpart`
+2. **List Your Volumes**: To view all connected drives and partitions, type: `list volume`
+3. **Identify The Target**: Scan the list to find the "Main" partition. You are looking for two specific clues:
+    * **Size**: It should match the same size of the Windows Installation.
+    * **FS (File System)**: Must be formatted as **NTFS**
+    * Note the Letter assigned to this volume (e.g `C:`)
+4. **Exit to Command Prompt**: Once you've identified the correct letter, type `exit` to return to the standard Command Prompt.
 
-<details>
-<summary>2. Identify Your Windows Drive</summary>
+## Step 3: The Utility Manager Swap
+Now that we know exactly when Windows is "resting", it's time to perform the swwap. We'll start by backing up the Utility Manager (`Utilman.exe`) and replacing it with a copy of Command Prompt (`cmd.exe`). This will trick Windows into opening a terminal when you click the **Accessibility Icon** on the login screen.
 
-1. At the Command Prompt, type:
-
-```cmd
-diskpart
-list volume
-exit
-```
-
-2. Identify the drive letter where Windows is installed (commonly `C:` or `D:` in recovery mode).
-
-</details>
-
-<details>
-<summary>3. Backup `utilman.exe`</summary>
-
-1. Run:
-
-```cmd
-C:\Windows\System32\utilman.exe C:\Windows\System32\utilman.exe.bak
-```
-
-*(Replace `C:` with your personal Windows drive if different.)*
-
-2. Confirm overwrite if prompted, then (type `Yes`).
-
-</details>
-
-<details>
-<summary>4. Replace `utilman.exe` With Command Prompt</summary>
-
-1. Run:
-
-```cmd
-C:\Windows\System32\cmd.exe C:\Windows\System32\utilman.exe
-```
-
-2. Confirm overwrite if prompted.
-
-</details>
-
-<details>
-<summary>5. Reboot and use the Fix</summary>
-
-1. Restart your computer as you normally would.
-2. On the login screen, click the **Ease of Access** button at the bottom-right corner. This will open a Command Prompt with administrative privileges, instead of the previous controls.
-
-</details>
-
-<details>
-<summary>6. Reset Your Password</summary>
-
-1. In the Command Prompt, type:
-
-```cmd
-net user <username> <newpassword>
-```
-
-- Replace `<username>` with your Windows account name.
-- Replace `<newpassword>` with a new password.
-
-2. Close the Command Prompt and log in with the new password.
-
-</details>
-
-<details>
-<summary>7. Restore Original `utilman.exe`</summary>
-
-1. After logging in, restore the original file:
-
-```cmd
-copy C:\Windows\System32\utilman.exe.bak C:\Windows\System32\utilman.exe
-```
-
-2. Confirm overwrite.
-
-</details>
-
----
-
-## Forced Restore Fix (If Errors Occur)
-
-**If an error does occur:** 
-
-You should run a forced restore:
-
-<details>
-<summary>Step 1: Take ownership</summary>
-
-```cmd
-takeown /f C:\Windows\System32\utilman.exe
-```
-</details>
-
-<details>
-<summary>Step 2: Grant yourself full permissions</summary>
-
-```cmd
-icacls C:\Windows\System32\utilman.exe /grant administrators:F
-```
-</details>
-
-<details>
-<summary>Step 3: Restore the original file</summary>
-
-```cmd
-copy C:\Windows\System32\utilman.exe.bak C:\Windows\System32\utilman.exe
-```
-</details>
-
-<details>
-<summary>Step 4: Reset PC & Check Ease of Access Controls</summary>
-
-</details>
-
-## How It Works
-The Windows login screen allows certain accessibility tools—like Utility Manager (`utilman.exe`)—to run *before* a user signs in fully. By temporarily replacing `utilman.exe` with `cmd.exe`, Windows unknowingly grants you a Command Prompt with system-level privileges at the login screen. Letting you bypass knowing your password, in order to let you reset passwords or enable accounts without normal login authentication.
-
----
-
-### Notes
-- Only works for local accounts. Microsoft accounts may require additional steps.
-- Do **not** use this method on systems you do not own, as it is a breach of privacy.
-- Always restore `utilman.exe` to maintain system security, as others can do the same to your own devices.
-
----
-
-*Created by [B. Fontaine] — Use responsibly & at your own risk.*
-
+1. **Navigate to the System Directory**: First, move the focus of the Command Prompt into the folder where Windows keeps its core files.
+2. **Backup the Original File**:
+3. **Perform the Swap**:
+4. **Confirm**:
