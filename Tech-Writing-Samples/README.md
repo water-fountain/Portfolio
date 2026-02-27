@@ -19,6 +19,14 @@ A deep dive into upcycling "obsolete" hardware. This guide explains how to pair 
 
 **Target Audience**: DIY hobbyists and Home-Lab beginners.
 
+🗄️[Forgotten Your Windows Password? Here's How to Break Back In](https://github.com/water-fountain/Portfolio/blob/main/Tech-Writing-Samples/Windows-Recovery-Guide.md)
+
+Getting locked out of your own system doesn't have to mean a trip to the repair shop, costing you hundreds of dollars just for an evaluation. This guide walks you through a clever "backdoor" method using the Windows Recovery Environment to swap system files, allowing you to bypass the lock screen and reset your credentials without losing any of your data.
+
+Key Focus: System Recovery, Windows Command Line, Security Workarounds
+
+Target Auidence: DIY hobbyists and Home-lab beginners.
+
 🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)]()
 
 An essential guide to the most confusing cable in your home. This article breaks down the technical standards behind USB-C, explaining why two identical-looking cables can perform radically differently, and how to identify the right specifications for charging, data transfer, and video output.
