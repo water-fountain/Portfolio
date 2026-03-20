@@ -39,14 +39,17 @@ Once Command Prompt is opened, we hit a hurdle: since we aren't actually booted 
 4. **Exit to Command Prompt**: Once you've identified the correct letter, type `exit` to return to the standard Command Prompt.
 
 ## Step 3: The Utility Manager Swap
-Now that we know exactly when Windows is "resting", it's time to perform the swwap. We'll start by backing up the Utility Manager (`Utilman.exe`) and replacing it with a copy of Command Prompt (`cmd.exe`). This will trick Windows into opening a terminal when you click the **Accessibility Icon** on the login screen.
+Now that we know exactly when Windows is "resting", it's time to perform the swap. We'll start by backing up the Utility Manager (`Utilman.exe`) and replacing it with a copy of Command Prompt (`cmd.exe`). This will trick Windows into opening a terminal when you click the **Accessibility Icon** on the login screen.
 
-1. **Navigate to the System Directory**: You need to point the Command Prompt to the heart of the OS. Type the drive letter followed by a colon (e.g., `C:`), hit enter, and then run:
-`cd windows\system32`
-2. **Backup the Original File**: Create a safety net by renaming the original utility so you can restore it later: `copy utilman.exe utilman.exe.bak`
-3. **Perform the Swap**: Finally, replace the Utility Manager with a copy of the Command Prompt: `copy cmd.exe utilman.exe`
-4. **Confirm**: Type `Yes` and hit **Enter** if the system asks you to overwrite the file.
-
+1. **Navigate to the System Directory**: You need to point the Command Prompt to the heart of the OS. Type the drive letter followed by a colon (e.g., `C:`), hit **Enter**, and then run the following commands to backup and swap the files:
+```cmd 
+C:
+cd windows\system32
+copy utilman.exe utilman.exe.bak
+copy cmd.exe utilman.exe
+```
+2. **Confirm the Overwrite**: If the system asks if you want to overwrite the file, type **Yes** (or **y**) and hit **Enter**.
+3. **Double Check**: Ensure you see a "1 file(s) copied" message after the final command. This confirms the swap was successful.
 ## Step 4: Reboot & Trigger that "Backdoor"
 Now that these two files are swapped, it's time to see what all the hype was about. But first, you need to exit the recovery environment and head back to your standard Windows login screen. 
 
@@ -57,16 +60,18 @@ Now that these two files are swapped, it's time to see what all the hype was abo
 ## Step 5: Reset Your Password
 You're officially "in". Now, all that’s left is to tell Windows to accept a new password of your choosing for your account.
 
+  Note: This method is designed for **Local Accounts**. If you sign in with a **Microsoft Account** (an email address), this command may not change your online password. However, it can often allow you to create a new local admin account, so you can at least rescue your files from the hard drive.
+
 1. **Reset the Account**: In the **Command Prompt**, type the following command. Be sure to replace `<username>` with your current actual account name and `<newpassword>` with your new desired password:
 
 `net user <username> <newpassword>`
 
-2. **Login**: Close the **Command Prompt** and enter the new password you just created into the Windows login box. Congratulations, you've succssfully regained access to your system!
+2. **Login**: Close the **Command Prompt** and enter the new password you just created into the Windows login box. Congratulations, you've successfully regained access to your system!
 
 ## Step 6: Restore to "Factory" Settings
 For obvious security reasons, you shouldn't leave a "backdoor" Command Prompt sitting on your login screen. Leaving an elevated prompt accessible to anyone with physical access to your PC is a significant security risk. Once you've verified that you can log back in, you should restore the original `utilman.exe` file immediately.
 
-1. **Open Command Prompt (Admin)**: Once logged into Windows, right click the Start button and select **Terminal (Admin)** or click the **Start** button, type `cmd`, and select **Run as Administrator**. 
+1. **Open Command Prompt (Admin)**: Once logged into Windows, right-click the Start button and select **Terminal (Admin)** or click the **Start** button, type `cmd`, and select **Run as Administrator**. 
 2. **Revert the Previous Changes**: Run the following command to move your backup back into its rightful place: `copy C:\Windows\System32\utilman.exe.bak C:\Windows\System32\utilman.exe`
 3. **Confirmation**: Type `Yes` when asked to overwrite the file. 
 
