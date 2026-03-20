@@ -60,7 +60,7 @@ Now that these two files are swapped, it's time to see what all the hype was abo
 ## Step 5: Reset Your Password
 You're officially "in". Now, all that’s left is to tell Windows to accept a new password of your choosing for your account.
 
-  Note: This method is designed for **Local Accounts**. If you sign in with a **Microsoft Account** (an email address), this command may not change your online password. However, it can often allow you to create a new local admin account, so you can at least rescue your files from the hard drive.
+> Note: This method is designed for **Local Accounts**. If you sign in with a **Microsoft Account** (an email address), this command may not change your online password. However, it can often allow you to create a new local admin account, so you can at least rescue your files from the hard drive.
 
 1. **Reset the Account**: In the **Command Prompt**, type the following command. Be sure to replace `<username>` with your current actual account name and `<newpassword>` with your new desired password:
 
