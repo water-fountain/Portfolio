@@ -10,11 +10,14 @@
 
 Stop browsing for your next tech upgrade. The best hardware for your home server isn't sitting on a store shelf; it's in your own closet or junk drawer, gathering the same exact dust. 
 
-Most of us have an old laptop lying around. Maybe it's a retired machine from a past job or an old personal favorite you replaced years ago. These machines aren't dead, per se. They're just too slow for what we expect today. In a world of 4k streaming, gaming, and bloated Windows updates, they've lost their edge for everyday use.
+Most people have an old laptop sitting around collecting dust, too slow to use but not quite useless enough to throw away just yet. Maybe it’s a retired machine from a past job, or a favorite laptop you used years ago. These systems aren’t dead, they’re just too slow for what we expect from them today. What many people don’t realize, though, is that this “outdated” hardware is still more than capable of running a surprisingly powerful home server with the right setup.
 
-But, in the world of home labs, that "obsolete" machine is a powerhouse. When you pair your old laptop with a Raspberry Pi, you aren't just recycling e-waste. You're building a tag-team server that is faster, more reliable, and has much more storage than a standalone Pi could ever dream of.  
+With a bit of setup, you can turn that old laptop into a centralized hub for your home network, handling file storage, media streaming, data backups, or even hosting your own services. Instead of relying entirely on cloud subscriptions and big tech, you gain more autonomy over your data while putting old hardware back to use.
+
+In this guide, we’ll walk through how to repurpose an old laptop into a functional home server, while introducing a Raspberry Pi to extend its capabilities. Along the way, you’ll also gain a practical understanding of how home servers operate, how devices communicate over a network, and what’s actually happening behind the scenes when everything comes together.
 
 [IMAGE: A "Before" shot showing an old laptop next to a small Raspberry Pi]
+
 ## The Gear Check
 Before we dive into the software and get ahead of ourselves, let’s make sure that "new" old laptop actually has what it needs to run the show. You don’t need top-of-the-line specs, but you do need a few basics to make this partnership work.
 
@@ -41,7 +44,7 @@ First, we need to give the Raspberry Pi an operating system. Head over to the of
 
 1. Pop your microSD card into your laptop and open the Imager tool.
 2. Choose the **'Raspberry Pi OS (64 Bit)'**, and select your SD card.
-3. Before you click "Write", look for the settings that allow you to **Enable SSH**. This will allow you to control the Pi from your laptop later without the need of a dedicated monitor and keyboard plugged into the Pi.
+3. Before you click "Write", look for the settings that allow you to **Enable SSH**. This allows you to run the Pi *headless*—meaning you can tuck it away in a closet and manage it entirely from your laptop without needing a dedicated monitor or keyboard.
 4. Once that's done, slide the microSD into your Pi and plug in the power.
 
 [IMAGE: Screenshot of the Raspberry Pi Imager "Advanced Options" showing the SSH toggle enabled]
@@ -54,14 +57,15 @@ Now, we need to get your laptop and Pi talking to each other!
 ```bash
 ping raspberrypi.local
 ```
-Note: If the ping fails, log in to your router, open the list of connected devices, and look for “raspberrypi” to find its IP address.
+
+Note: We are using mDNS (the `.local` address), so you don't have to hunt for numbers. However, if the ping fails, your router might not support it. In that case, log in to your router’s admin page, look for the list of connected devices, and find the **IP address** for "raspberrypi" (it will look something like 192.168.x.x).
 
 3. Log in via SSH. If you set a username like "admin", you'd type 
 
 ```bash
 ssh admin@raspberrypi.local
 ```
-Once you're in, you're officially remote-controlling your new server.
+(Or use `ssh admin@192.168.x.x` if the .local address didn't work!)
 
 ### Step 3: Choose Your Server's "Career" (Main Focus)
 This is the fun part! Your dynamic duo is ready to be put to work, but you need to give it a job first. Here are some examples of what you can choose:
@@ -73,10 +77,12 @@ This is the fun part! Your dynamic duo is ready to be put to work, but you need 
 
 Note: Follow the official installation guides for each application, as they provide detailed instructions and best practices.
 ### Step 4: Expanding the Vault (Adding Optional Storage)
-Especially if your building a home media server, that laptop's internal drive might fill up fast.
+Especially if you're building a home media server, that laptop's internal drive might fill up fast.
 
 * **Plug & Play**: You can plug external **HDDs** or **thumb drives** directly into the Pi's USB ports.
 * **Pro Move**: You can "share" the laptop's internal folders over the network, letting the Raspberry Pi use the laptop's larger hard drive to store files. It may take some extra steps, but it's a great way to maximize the space that we already have. 
+
+Note: If you plan on closing your laptop lid while it acts as a server, make sure to go into your **Power Options** and set 'When I close the lid' to **Do Nothing**. Otherwise, your server will go to sleep as soon as you tuck it away!
 
 ### Step 5: Lock It Up! (Secure Your Home Server) 
 Since this machine is now a permanent part of your home network, you don't want it to be a security risk:
