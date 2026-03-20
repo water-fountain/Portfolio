@@ -11,11 +11,11 @@ This writing section showcases long-form technology features written for enthusi
 
 ## Featured Projects:
 
-🗄️[Stop Buying New Gear: Turn Your Dusty Old Laptop into a High-Power Home Server](https://github.com/water-fountain/IT-Portfolio/blob/main/Tech-Writing-Samples/Laptop-Pi-Home-Server-Guide.md)
+🗄️[The "Hybrid Home Server": Upcycling Old Laptops with a Raspberry Pi](https://github.com/water-fountain/IT-Portfolio/blob/main/Tech-Writing-Samples/Laptop-Pi-Home-Server-Guide.md)
 
 A deep dive into upcycling "obsolete" hardware. This guide explains how to pair an old laptop with a Raspberry Pi to create a high-performance home lab, covering everything from initial SSH setup to long-term security.
 
-**Key Focus**: Hardware upcycling, Linux basics, Network Security. 
+**Key Focus**: Hardware upcycling, Linux CLI, Network Security. 
 
 **Target Audience**: DIY hobbyists and Home-Lab beginners.
 
@@ -23,9 +23,9 @@ A deep dive into upcycling "obsolete" hardware. This guide explains how to pair 
 
 Getting locked out of your own system doesn't have to mean a trip to the repair shop, costing you hundreds of dollars just for an evaluation. This guide walks you through a clever "backdoor" method using the Windows Recovery Environment to swap system files, allowing you to bypass the lock screen and reset your credentials without losing any of your data.
 
-Key Focus: System Recovery, Windows Command Line, Security Workarounds
+**Key Focus**: System Recovery, Windows Command Line, Security Workarounds
 
-Target Auidence: DIY hobbyists and Home-lab beginners.
+**Target Auidence**: DIY hobbyists and Home-lab beginners.
 
 🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)]()
 
