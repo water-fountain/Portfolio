@@ -31,11 +31,11 @@ Key skills demonstrated:
 
 </details>
 
-🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)]()
+🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)](https://github.com/water-fountain/Portfolio/blob/main/Tech-Writing-Samples/USBC-Differences-Guide.md)
 
 <details>
 <summary>More Information:</summary>
-IN PROGRESS
+
 </details>
 
 ## IT Projects Overview
