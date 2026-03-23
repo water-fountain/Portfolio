@@ -6,7 +6,7 @@
 ![UX Writing](https://img.shields.io/badge/Skill-UX%20Writing-purple)
 ![Research-Based](https://img.shields.io/badge/Style-Research%20Driven-blueviolet)
 
-Most people see a cable and will finagle it until it fits. But with USB-C, a physical fit is rarely enough. You might plug in a cable expecting your laptop to charge, and it might—but perhaps not at the speed you expected. The issue isn't the connection itself; it’s the invisible technology behind the scenes that varies wildly from one cable to the next.
+Most people see a cable and will finagle it until it fits. But with USB-C, a physical fit is rarely enough. You might plug in a cable expecting your laptop to charge, and it might, but perhaps not at the speed you expected. The issue isn't the connection itself; it’s the invisible technology behind the scenes that varies wildly from one cable to the next.
 USB-C was meant to simplify our lives by creating a universal port. In reality, it often did the opposite. While the connector shape is standard, the capabilities of each port and cable can be completely different.
 
 ## Same Connector, Different Capabilities 
@@ -36,11 +36,11 @@ This lack of transparency means that for most users, USB-C remains a trial-and-e
 
 ## What Actually Matters 
 
-You simply cannot judge a USB-C cable by its cover. Using the wrong one leads to slow charging, bottlenecked data, and missing display outputs—even if your hardware is perfectly capable. When buying or organizing your gear, ignore the plug shape and look for these three specs:
+You simply cannot judge a USB-C cable by its cover. Using the wrong one leads to slow charging, bottlenecked data, and missing display outputs, even if your hardware is perfectly capable. When buying or organizing your gear, ignore the plug shape and look for these three specs:
 
 - Power Delivery (PD) Rating: (e.g., 60W vs 100W+)
 - Data Transfer Speed: (USB 3.0 or higher)
 - Video Support: (DisplayPort Alt Mode)
 
 
-USB-C isn’t a bad standard—it’s actually one of the most flexible connectors ever designed. The "mess" is simply the result of one port trying to do everything at once. Once you stop looking at the plug and start looking at the specs, the confusion disappears.
+USB-C isn’t a bad standard, it’s actually one of the most flexible connectors ever designed. The "mess" is simply the result of one port trying to do everything at once. Once you stop looking at the plug and start looking at the specs, the confusion disappears.
