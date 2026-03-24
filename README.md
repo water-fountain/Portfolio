@@ -43,6 +43,7 @@ Key Skills Demonstrated:
 * **Power Delivery (PD) Expertise**: Detailing the negotiation process between chargers and devices, specifically the role of E-Marker chips in high-wattage (100W+) cables.
 * **Consumer Advocacy**: Translating "alphabet soup" specifications into actionable buying advice for charging, data transfer, and Alt-Mode video output.
 * **Technical Clarity**: Using a "Visual Identification" approach to help readers navigate unlabelled cables and mismatched hardware specifications.
+
 </details>
 
 ## IT Projects Overview
