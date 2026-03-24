@@ -27,7 +27,7 @@ Getting locked out of your own system doesn't have to mean a trip to the repair 
 
 **Target Auidence**: DIY hobbyists and Home-lab beginners.
 
-🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)]()
+🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)](https://github.com/water-fountain/Portfolio/blob/main/Tech-Writing-Samples/USBC-Differences-Guide.md)
 
 An essential guide to the most confusing cable in your home. This article breaks down the technical standards behind USB-C, explaining why two identical-looking cables can perform radically differently, and how to identify the right specifications for charging, data transfer, and video output.
 
