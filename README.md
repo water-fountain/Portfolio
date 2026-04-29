@@ -64,6 +64,21 @@ Key skills demonstrated:
 - Domain join, authentication, and troubleshooting
 </details>
 
+📁 [Sentinel-Health Audit](https://github.com/water-fountain/Portfolio/blob/main/SentinelHealth-Auditor/SentinelHealth.ps1)
+
+<details>
+<summary>More Information:</summary>
+A custom PowerShell tool designed to monitor system health and send automated alerts. This project involved building an end-to-end pipeline that gathers hardware data, evaluates system status, and generates both a local visual dashboard and remote cloud alerts.
+
+Key Skills demonstrated:
+
+- Logic & Automation: Built a workflow that pulls hardware metrics via CIM/WMI and pushes JSON-formatted alerts to a Discord Webhook.
+- Infrastructure Troubleshooting: Identified and fixed a common Windows reporting flaw where "Fast Startup" (Hiberboot) caused incorrect uptime data.
+- Data Accuracy: Refined resource monitoring by sampling real-time CPU usage and normalizing the data for multi-core processors.
+- Front-End Presentation: Designed a modern, dark-mode HTML/CSS dashboard to make technical reports readable for non-technical users.
+- AI Collaboration: Leveraged AI as a "technical peer" to assist with CSS design, troubleshoot character encoding issues, and refactor complex logic for better performance.
+</details>
+
 📁 [Help Desk Ticket Scenarios](https://github.com/water-fountain/IT-Portfolio/blob/main/Help-Desk-Ticket-Scenarios/README.md)
 
 <details>
