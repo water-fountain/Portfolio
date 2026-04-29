@@ -64,7 +64,7 @@ Key skills demonstrated:
 - Domain join, authentication, and troubleshooting
 </details>
 
-📁 [Sentinel-Health Audit](https://github.com/water-fountain/Portfolio/blob/main/SentinelHealth-Auditor/SentinelHealth.ps1)
+📁 [Sentinel-Health Auditer](https://github.com/water-fountain/Portfolio/blob/main/SentinelHealth-Auditor/SentinelHealth.ps1)
 
 <details>
 <summary>More Information:</summary>
