@@ -9,6 +9,7 @@ A collection of enterprise infrastructure deployments, automated system auditing
 
 <details>
 <summary><b>More Information:</b></summary>
+<br>
 
 Architected a virtualized enterprise domain environment utilizing Windows Server 2019 to implement secure identity lifecycles and resilient network services.
 
