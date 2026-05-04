@@ -19,6 +19,7 @@ Architected a virtualized enterprise domain environment utilizing Windows Server
 * Policy Automation: Enterprise-wide configuration enforcement via Group Policy Objects (GPOs).
 * Network Services: Integrated DNS, DHCP, and secure NTFS file sharing.
 * Diagnostics: Full-stack authentication and domain-join troubleshooting frameworks.
+
 </details>
 
 📁 [Sentinel-Health Auditer](https://github.com/water-fountain/Portfolio/blob/main/SentinelHealth-Auditor/SentinelHealth.ps1)
