@@ -8,16 +8,16 @@ A collection of enterprise infrastructure deployments, automated system auditing
 📁 [Active Directory Project](https://github.com/water-fountain/IT-Portfolio/blob/main/AD-Project/main_active_directory_lab_guide.md)
 
 <details>
-<summary>More Information:</summary>
+<summary><b>More Information:</b></summary>
+
 Architected a virtualized enterprise domain environment utilizing Windows Server 2019 to implement secure identity lifecycles and resilient network services.
 
+### Core Deliverables:
 
-Core Deliverables:
-
-Identity Management: Role-Based Access Control (RBAC) and OU structural design.
-Policy Automation: Enterprise-wide configuration enforcement via Group Policy Objects (GPOs).
-Network Services: Integrated DNS, DHCP, and secure NTFS file sharing.
-Diagnostics: Full-stack authentication and domain-join troubleshooting frameworks.
+* Identity Management: Role-Based Access Control (RBAC) and OU structural design.
+* Policy Automation: Enterprise-wide configuration enforcement via Group Policy Objects (GPOs).
+* Network Services: Integrated DNS, DHCP, and secure NTFS file sharing.
+* Diagnostics: Full-stack authentication and domain-join troubleshooting frameworks.
 </details>
 
 📁 [Sentinel-Health Auditer](https://github.com/water-fountain/Portfolio/blob/main/SentinelHealth-Auditor/SentinelHealth.ps1)
