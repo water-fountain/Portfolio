@@ -11,6 +11,7 @@ A collection of enterprise infrastructure deployments, automated system auditing
 <summary>More Information:</summary>
 Architected a virtualized enterprise domain environment utilizing Windows Server 2019 to implement secure identity lifecycles and resilient network services.
 
+
 Core Deliverables:
 
 Identity Management: Role-Based Access Control (RBAC) and OU structural design.
