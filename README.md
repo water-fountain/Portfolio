@@ -8,8 +8,9 @@ A collection of enterprise infrastructure deployments, automated system auditing
 📁 [Active Directory Project](https://github.com/water-fountain/IT-Portfolio/blob/main/AD-Project/main_active_directory_lab_guide.md)
 
 <details>
-<summary><b>More Information:</b></summary>
-<br>
+<summary><strong>More Information:</strong></summary>
+
+<br />
 
 Architected a virtualized enterprise domain environment utilizing Windows Server 2019 to implement secure identity lifecycles and resilient network services.
 
@@ -20,6 +21,7 @@ Architected a virtualized enterprise domain environment utilizing Windows Server
 * Network Services: Integrated DNS, DHCP, and secure NTFS file sharing.
 * Diagnostics: Full-stack authentication and domain-join troubleshooting frameworks.
 
+<br />
 </details>
 
 📁 [Sentinel-Health Auditer](https://github.com/water-fountain/Portfolio/blob/main/SentinelHealth-Auditor/SentinelHealth.ps1)
