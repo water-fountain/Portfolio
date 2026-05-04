@@ -1,50 +1,7 @@
-# Portfolio – Brandon Fontaine
+# Technical Systems Portfolio | Brandon Fontaine
+Systems Administration • Technical Documentation • IT Automation
 
-This repository contains hands-on IT Support and Systems Administration projects designed to simulate real-world enterprise environments. Each project is fully documented with step-by-step configuration, screenshots, and troubleshooting notes to demonstrate job-ready technical skills.
-
-## 📝 Technical Writing & Documentation
-
-🗄️[Stop Buying New Gear: Turn Your Dusty Old Laptop into a High-Power Home Server](https://github.com/water-fountain/IT-Portfolio/blob/main/Tech-Writing-Samples/Laptop-Pi-Home-Server-Guide.md)
-
-<details>
-<summary>More Information:</summary>
-A conversational yet technical guide on how to convert an "obsolete" laptop into a functional home server with the simple addition of a Raspberry Pi.
-
-Key skills demonstrated:
-* **Remote Management**: Configuring Headless OS deployments with pre-authenticated SSH access.
-* **Network Troubleshooting**: Using ICMP (ping) and DHCP client lists to verify node connectivity.
-* **Linux Administration**: Basic CLI interaction, package management (apt update), and service security (UFW).
-
-</details>
-
-🗄️[Forgotten Your Windows Password? Here's How to Break Back In](https://github.com/water-fountain/Portfolio/blob/main/Tech-Writing-Samples/Windows-Recovery-Guide.md)
-
-<details>
-<summary>More Information:</summary>
-A last "ditch" technical guide detailing how to regain system access using the Windows Recovery Environment (WinRE) to bypass the login screen without any data loss.
-
-Key skills demonstrated:
-* **System Recovery & Logic**: Navigating WinRE and using `diskpart` to identify shifted drive letters in a pre-boot environment.
-* **Advanced Command Line**: Executing file system "swaps" and using `net user` commands to override administrative credentials.
-* **Security Posture:** Explicitly documenting the "Restore to Factory" phase to ensure no permanent security backdoors are left on the system.
-* **Instructional Design**: Using a "Safety First" approach with clear warnings and post-recovery "Safety Net" tips for the user.
-
-</details>
-
-🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)](https://github.com/water-fountain/Portfolio/blob/main/Tech-Writing-Samples/USBC-Differences-Guide.md)
-
-<details>
-<summary>More Information:</summary>
-A comprehensive feature breaking down the often-invisible logic behind USB-C hardware and Power Delivery (PD) protocols.
-
-Key Skills Demonstrated:
-
-* **Hardware Protocol Analysis**: Explaining the distinction between physical connectors (USB-C) and underlying data standards like USB 3.2 and USB4.
-* **Power Delivery (PD) Expertise**: Detailing the negotiation process between chargers and devices, specifically the role of E-Marker chips in high-wattage (100W+) cables.
-* **Consumer Advocacy**: Translating "alphabet soup" specifications into actionable buying advice for charging, data transfer, and Alt-Mode video output.
-* **Technical Clarity**: Using a "Visual Identification" approach to help readers navigate unlabelled cables and mismatched hardware specifications.
-
-</details>
+A collection of enterprise infrastructure deployments, automated system auditing tools, and comprehensive technical documentation.
 
 ## IT Projects Overview
 
@@ -107,6 +64,50 @@ Key Skills demonstrated:
 - Troubleshooting & Problem Solving: Diagnosing lockout causes and implementing effective solutions
 - System Administration: Modifying system files, using administrative privileges, and working with Windows utilities
 - Security Awareness: Maintaining system integrity and protecting data during recovery procedures
+</details>
+
+## 📝 Technical Writing & Documentation
+
+🗄️[Stop Buying New Gear: Turn Your Dusty Old Laptop into a High-Power Home Server](https://github.com/water-fountain/IT-Portfolio/blob/main/Tech-Writing-Samples/Laptop-Pi-Home-Server-Guide.md)
+
+<details>
+<summary>More Information:</summary>
+A conversational yet technical guide on how to convert an "obsolete" laptop into a functional home server with the simple addition of a Raspberry Pi.
+
+Key skills demonstrated:
+* **Remote Management**: Configuring Headless OS deployments with pre-authenticated SSH access.
+* **Network Troubleshooting**: Using ICMP (ping) and DHCP client lists to verify node connectivity.
+* **Linux Administration**: Basic CLI interaction, package management (apt update), and service security (UFW).
+
+</details>
+
+🗄️[Forgotten Your Windows Password? Here's How to Break Back In](https://github.com/water-fountain/Portfolio/blob/main/Tech-Writing-Samples/Windows-Recovery-Guide.md)
+
+<details>
+<summary>More Information:</summary>
+A last "ditch" technical guide detailing how to regain system access using the Windows Recovery Environment (WinRE) to bypass the login screen without any data loss.
+
+Key skills demonstrated:
+* **System Recovery & Logic**: Navigating WinRE and using `diskpart` to identify shifted drive letters in a pre-boot environment.
+* **Advanced Command Line**: Executing file system "swaps" and using `net user` commands to override administrative credentials.
+* **Security Posture:** Explicitly documenting the "Restore to Factory" phase to ensure no permanent security backdoors are left on the system.
+* **Instructional Design**: Using a "Safety First" approach with clear warnings and post-recovery "Safety Net" tips for the user.
+
+</details>
+
+🗄️[Why Your USB-C Cable Doesn’t Work (And How to Avoid Buying the Wrong One)](https://github.com/water-fountain/Portfolio/blob/main/Tech-Writing-Samples/USBC-Differences-Guide.md)
+
+<details>
+<summary>More Information:</summary>
+A comprehensive feature breaking down the often-invisible logic behind USB-C hardware and Power Delivery (PD) protocols.
+
+Key Skills Demonstrated:
+
+* **Hardware Protocol Analysis**: Explaining the distinction between physical connectors (USB-C) and underlying data standards like USB 3.2 and USB4.
+* **Power Delivery (PD) Expertise**: Detailing the negotiation process between chargers and devices, specifically the role of E-Marker chips in high-wattage (100W+) cables.
+* **Consumer Advocacy**: Translating "alphabet soup" specifications into actionable buying advice for charging, data transfer, and Alt-Mode video output.
+* **Technical Clarity**: Using a "Visual Identification" approach to help readers navigate unlabelled cables and mismatched hardware specifications.
+
 </details>
 
 About Me
