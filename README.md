@@ -9,16 +9,14 @@ A collection of enterprise infrastructure deployments, automated system auditing
 
 <details>
 <summary>More Information:</summary>
-Simulates a Windows enterprise domain environment using Windows Server 2019 and Windows 10, focusing on identity management, network services, and access control.
+Architected a virtualized enterprise domain environment utilizing Windows Server 2019 to implement secure identity lifecycles and resilient network services.
 
-Key skills demonstrated:
+Core Deliverables:
 
-- Active Directory Domain Services (AD DS)
-- DNS & DHCP configuration
-- Group Policy Objects (GPOs)
-- Role-Based Access Control (RBAC)
-- NTFS permissions & secure file sharing
-- Domain join, authentication, and troubleshooting
+Identity Management: Role-Based Access Control (RBAC) and OU structural design.
+Policy Automation: Enterprise-wide configuration enforcement via Group Policy Objects (GPOs).
+Network Services: Integrated DNS, DHCP, and secure NTFS file sharing.
+Diagnostics: Full-stack authentication and domain-join troubleshooting frameworks.
 </details>
 
 📁 [Sentinel-Health Auditer](https://github.com/water-fountain/Portfolio/blob/main/SentinelHealth-Auditor/SentinelHealth.ps1)
